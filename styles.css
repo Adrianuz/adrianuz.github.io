@@ -464,6 +464,36 @@ body {
 
 /* Projects Section */
 
+.project-highlights {
+    margin: 1.5rem 0;
+}
+
+.project-highlights h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-highlights ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.project-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 .project-coming-soon {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     border: 2px dashed var(--border-color);
@@ -601,10 +631,209 @@ body {
     color: var(--primary-dark);
     text-decoration: underline;
 }
+/* Hobbies Section */
+.hobbies {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.hobbies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hobbies-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hobbies-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.hobby-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Minecraft Card Theme */
+.minecraft-card {
+    border-left: 4px solid #8B4513;
+}
+
+.minecraft-card:hover {
+    border-left-color: #228B22;
+}
+
+.minecraft-tech {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    color: white;
+}
+
+/* Roblox Card Theme */
+.roblox-card {
+    border-left: 4px solid #FF0000;
+}
+
+.roblox-card:hover {
+    border-left-color: #FF6B00;
+}
+
+.roblox-tech {
+    background: linear-gradient(135deg, #FF0000, #FF6B00);
+    color: white;
+}
+
+.hobby-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hobby-icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+}
+
+.hobby-info {
+    flex: 1;
+}
+
+.hobby-title {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 0.25rem 0;
+}
+
+.hobby-subtitle {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.hobby-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hobby-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.hobby-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hobby-tech .tech-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.hobby-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+    padding: 0.375rem 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.hobby-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.hobby-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hobby-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.link-icon {
+    font-size: 1rem;
+}
+
+.hobbies-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.hobbies-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.hobbies-note {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 
 /* Contact Section */
 .contact {
-    background-color: var(--bg-section);
+    background-color: var(--bg-light);
 }
 
 .contact-content {
@@ -723,6 +952,30 @@ body {
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-content {
+        gap: 2rem;
+    }
+
+    .hobby-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .hobby-icon {
+        margin: 0 auto;
+    }
+
+    .hobbies-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
